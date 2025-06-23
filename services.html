@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Dionisio DR Alvior III</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Configuration -->
+  <script src="/js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/extra.css">
+</head>
+<body class="bg-retro-light text-retro-brown dark:bg-retro-dark dark:text-white font-sans transition-colors duration-300">
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/90 dark:bg-retro-dark/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo/Name -->
+        <div class="flex-shrink-0">
+          <a href="/" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+            Dionisio DR Alvior III
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/services.html" class="nav-link text-retro-neon dark:text-retro-amber">Services</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+            <a href="/portfolio.html" class="nav-link">Portfolio</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/resume.html" class="nav-link">Resume</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Theme Toggle & Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <span id="theme-icon" class="text-lg">🌙</span>
+          </button>
+          
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-800">
+          <a href="/" class="mobile-nav-link">Home</a>
+          <a href="/about.html" class="mobile-nav-link">About</a>
+          <a href="/services.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">Services</a>
+          <a href="/projects.html" class="mobile-nav-link">Projects</a>
+          <a href="/portfolio.html" class="mobile-nav-link">Portfolio</a>
+          <a href="/blog.html" class="mobile-nav-link">Blog</a>
+          <a href="/resume.html" class="mobile-nav-link">Resume</a>
+          <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- PAGE HEADER -->
+    <div class="text-center py-16">
+      <h1 class="text-4xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-retro-neon to-retro-amber bg-clip-text text-transparent">
+        My Services
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Comprehensive web development solutions tailored to your needs
+      </p>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3 class="text-xl font-semibold mb-4">Full Stack Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Building complete web applications from frontend to backend using React, Next.js, Node.js, and PHP.
+            </p>
+            <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Frontend Development (React, Next.js)</li>
+              <li>• Backend Development (Node.js, PHP)</li>
+              <li>• Database Design & Management</li>
+              <li>• API Development & Integration</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Creating responsive, accessible, and semantic designs with modern CSS frameworks like Tailwind.
+            </p>
+            <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Responsive Web Design</li>
+              <li>• User Interface Design</li>
+              <li>• User Experience Optimization</li>
+              <li>• Accessibility Implementation</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3 class="text-xl font-semibold mb-4">Project Management</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Managing projects from conception to deployment with focus on SEO, accessibility, and user experience.
+            </p>
+            <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Project Planning & Strategy</li>
+              <li>• Development Lifecycle Management</li>
+              <li>• Quality Assurance & Testing</li>
+              <li>• Deployment & Maintenance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-display font-bold text-center mb-12">Additional Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3 class="text-lg font-semibold mb-3">SEO Optimization</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Improve your website's search engine rankings and visibility.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3 class="text-lg font-semibold mb-3">Performance Optimization</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Speed up your website and improve user experience.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛡️</div>
+            <h3 class="text-lg font-semibold mb-3">Security Auditing</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Identify and fix security vulnerabilities in your applications.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3 class="text-lg font-semibold mb-3">Analytics & Reporting</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Set up tracking and provide insights for your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-display font-bold text-center mb-12">Technologies I Work With</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-retro-neon dark:text-retro-amber">Frontend</h3>
+            <div class="space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>JavaScript (ES6+)</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>React.js</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Next.js</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-retro-neon dark:text-retro-amber">Backend</h3>
+            <div class="space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Node.js</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>PHP</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Express.js</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>MySQL</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-retro-neon dark:text-retro-amber">Tools & Others</h3>
+            <div class="space-y-2">
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Git & GitHub</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>VS Code</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Figma</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Photoshop</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>SEO Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-display font-bold text-center mb-12">My Development Process</h2>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-retro-neon dark:bg-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">1</div>
+            <h3 class="text-lg font-semibold mb-2">Discovery</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Understanding your requirements and project goals</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-retro-neon dark:bg-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">2</div>
+            <h3 class="text-lg font-semibold mb-2">Planning</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Creating detailed project plans and wireframes</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-retro-neon dark:bg-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">3</div>
+            <h3 class="text-lg font-semibold mb-2">Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Building your project with clean, efficient code</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-retro-neon dark:bg-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">4</div>
+            <h3 class="text-lg font-semibold mb-2">Launch</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Deploying and maintaining your project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-display font-bold mb-6">Ready to Start Your Project?</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+          Let's discuss how I can help bring your ideas to life
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact.html" class="btn-primary">Get In Touch</a>
+          <a href="/projects.html" class="btn-secondary">View My Work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 dark:bg-gray-900 py-8 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-600 dark:text-gray-300">
+        © 2024 Dionisio DR Alvior III. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="/js/theme.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html> 

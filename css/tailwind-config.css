@@ -1,0 +1,63 @@
+/* Tailwind CSS Configuration */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Custom Tailwind Configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font Families */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .font-display {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+/* Custom Colors */
+@layer base {
+  :root {
+    --color-retro-dark: #0f0f0f;
+    --color-retro-light: #FAF3E0;
+    --color-retro-neon: #00FF7F;
+    --color-retro-amber: #FFA500;
+    --color-retro-brown: #3D3D3D;
+    --color-retro-orange: #F4A261;
+  }
+}
+
+/* Custom Animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

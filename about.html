@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Dionisio DR Alvior III</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Configuration -->
+  <script src="/js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/extra.css">
+</head>
+<body class="bg-retro-light text-retro-brown dark:bg-retro-dark dark:text-white font-sans transition-colors duration-300">
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/90 dark:bg-retro-dark/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo/Name -->
+        <div class="flex-shrink-0">
+          <a href="/" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+            Dionisio DR Alvior III
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link text-retro-neon dark:text-retro-amber">About</a>
+            <a href="/services.html" class="nav-link">Services</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+            <a href="/portfolio.html" class="nav-link">Portfolio</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/resume.html" class="nav-link">Resume</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Theme Toggle & Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <span id="theme-icon" class="text-lg">🌙</span>
+          </button>
+          
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-800">
+          <a href="/" class="mobile-nav-link">Home</a>
+          <a href="/about.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">About</a>
+          <a href="/services.html" class="mobile-nav-link">Services</a>
+          <a href="/projects.html" class="mobile-nav-link">Projects</a>
+          <a href="/portfolio.html" class="mobile-nav-link">Portfolio</a>
+          <a href="/blog.html" class="mobile-nav-link">Blog</a>
+          <a href="/resume.html" class="mobile-nav-link">Resume</a>
+          <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- PAGE HEADER -->
+    <div class="text-center py-16">
+      <h1 class="text-4xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-retro-neon to-retro-amber bg-clip-text text-transparent">
+        About Me
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Get to know me better - my journey, skills, and passion for web development
+      </p>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-20 animate-slide-up">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2 class="text-3xl font-display font-bold mb-6 text-retro-brown dark:text-white">
+              Who I Am
+            </h2>
+            <p class="text-lg leading-relaxed">
+              Hi, My Name Is Dionisio DR Alvior III. I'm a Full Stack Developer proficient in HTML, CSS, JavaScript, and libraries such as React, Next.js, and Tailwind for the frontend. My backend skills include Node.js, PHP, and SQL databases.
+            </p>
+            <p class="text-lg leading-relaxed">
+              I'm currently a student at Richwell Colleges Incorporated pursuing BSIS, but I've already successfully implemented full stack applications. There's a lot more for me to learn, but I'm motivated to grow, improve, and become a better, more adaptable developer — mentally, physically, and intellectually.
+            </p>
+            <p class="text-lg leading-relaxed">
+              I can also do project management, SEO, accessibility, responsive design, semantics, and other techniques that help businesses and users. I'm great at auditing and creating simple apps and websites too.
+            </p>
+            
+            <!-- Skills Overview -->
+            <div class="mt-8">
+              <h3 class="text-xl font-semibold mb-4 text-retro-neon dark:text-retro-amber">Key Skills</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="skills-card bg-white dark:bg-gray-800">
+                  <h4 class="font-semibold mb-2">Frontend</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">HTML, CSS, JavaScript, React, Next.js, Tailwind</p>
+                </div>
+                <div class="skills-card bg-white dark:bg-gray-800">
+                  <h4 class="font-semibold mb-2">Backend</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Node.js, PHP, SQL Databases</p>
+                </div>
+                <div class="skills-card bg-white dark:bg-gray-800">
+                  <h4 class="font-semibold mb-2">Tools</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Git, VS Code, Figma, Photoshop</p>
+                </div>
+                <div class="skills-card bg-white dark:bg-gray-800">
+                  <h4 class="font-semibold mb-2">Other</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">SEO, Accessibility, Project Management</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img src="/assets/images/me-selfie.jpg" alt="Dionisio DR Alvior III" class="w-80 h-80 rounded-2xl object-cover shadow-2xl border-4 border-retro-neon dark:border-retro-amber">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & EXPERIENCE -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16">
+        <h2 class="text-3xl font-display font-bold text-center mb-12">Education & Experience</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Education -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-retro-neon dark:text-retro-amber">Education</h3>
+            <div class="space-y-6">
+              <div class="education-experience-card bg-white dark:bg-gray-800">
+                <h4 class="text-lg font-semibold">BSIS - Information Systems</h4>
+                <p class="text-retro-neon dark:text-retro-amber font-medium">Richwell Colleges Incorporated</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Currently Studying</p>
+                <p class="text-sm text-gray-500 mt-1">Focusing on software development and information systems</p>
+              </div>
+              <div class="education-experience-card bg-white dark:bg-gray-800">
+                <h4 class="text-lg font-semibold">STEM Track</h4>
+                <p class="text-retro-neon dark:text-retro-amber font-medium">Felizardo C. Lipana National High School</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Graduated</p>
+                <p class="text-sm text-gray-500 mt-1">Science, Technology, Engineering, and Mathematics</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-retro-neon dark:text-retro-amber">Experience</h3>
+            <div class="space-y-6">
+              <div class="education-experience-card bg-white dark:bg-gray-800">
+                <h4 class="text-lg font-semibold">Full Stack Developer</h4>
+                <p class="text-retro-neon dark:text-retro-amber font-medium">Student Projects</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">2023 - Present</p>
+                <p class="text-sm text-gray-500 mt-1">Successfully implemented full stack applications, managed projects, and performed auditing.</p>
+              </div>
+              <div class="education-experience-card bg-white dark:bg-gray-800">
+                <h4 class="text-lg font-semibold">Web Developer</h4>
+                <p class="text-retro-neon dark:text-retro-amber font-medium">Freelance</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">2023 - Present</p>
+                <p class="text-sm text-gray-500 mt-1">Creating responsive websites and web applications for clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL INTERESTS -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-display font-bold text-center mb-12">Personal Interests</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-4xl mb-4">💻</div>
+            <h3 class="text-xl font-semibold mb-2">Coding</h3>
+            <p class="text-gray-600 dark:text-gray-300">Passionate about learning new technologies and building innovative solutions.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-4">📚</div>
+            <h3 class="text-xl font-semibold mb-2">Learning</h3>
+            <p class="text-gray-600 dark:text-gray-300">Always eager to expand my knowledge and stay updated with industry trends.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold mb-2">Problem Solving</h3>
+            <p class="text-gray-600 dark:text-gray-300">Enjoy tackling complex challenges and finding creative solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 dark:bg-gray-900 py-8 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-600 dark:text-gray-300">
+        © 2024 Dionisio DR Alvior III. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="/js/theme.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html> 

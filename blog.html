@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Dionisio DR Alvior III</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Configuration -->
+  <script src="/js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/extra.css">
+</head>
+<body class="bg-retro-light text-retro-brown dark:bg-retro-dark dark:text-white font-sans transition-colors duration-300">
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/90 dark:bg-retro-dark/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo/Name -->
+        <div class="flex-shrink-0">
+          <a href="/" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+            Dionisio DR Alvior III
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/services.html" class="nav-link">Services</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+            <a href="/portfolio.html" class="nav-link">Portfolio</a>
+            <a href="/blog.html" class="nav-link text-retro-neon dark:text-retro-amber">Blog</a>
+            <a href="/resume.html" class="nav-link">Resume</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Theme Toggle & Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <span id="theme-icon" class="text-lg">🌙</span>
+          </button>
+          
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-800">
+          <a href="/" class="mobile-nav-link">Home</a>
+          <a href="/about.html" class="mobile-nav-link">About</a>
+          <a href="/services.html" class="mobile-nav-link">Services</a>
+          <a href="/projects.html" class="mobile-nav-link">Projects</a>
+          <a href="/portfolio.html" class="mobile-nav-link">Portfolio</a>
+          <a href="/blog.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">Blog</a>
+          <a href="/resume.html" class="mobile-nav-link">Resume</a>
+          <a href="/contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- PAGE HEADER -->
+    <div class="text-center py-16">
+      <h1 class="text-4xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-retro-neon to-retro-amber bg-clip-text text-transparent">
+        Blog & Insights
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Thoughts, tutorials, and insights about web development and technology
+      </p>
+    </div>
+
+    <!-- FEATURED POST -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-display font-bold mb-8">Featured Post</h2>
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+          <img src="/assets/images/blog-featured.jpg" alt="Featured Blog Post" class="w-full h-64 object-cover">
+          <div class="p-8">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="bg-retro-neon dark:bg-retro-amber text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+              <span class="text-gray-500 text-sm">March 15, 2024</span>
+              <span class="text-gray-500 text-sm">5 min read</span>
+            </div>
+            <h3 class="text-2xl font-display font-bold mb-4">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                Building Modern Web Applications with React
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+              Learn the best practices for creating scalable React applications. This comprehensive guide covers everything from project setup to deployment, including state management, performance optimization, and modern development workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Web Development</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline font-medium">Read Full Article →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-display font-bold mb-8">Latest Posts</h2>
+        <div class="space-y-8">
+          <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-gray-500 text-sm">March 10, 2024</span>
+              <span class="text-gray-500 text-sm">3 min read</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                The Future of Web Development: What's Next?
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Exploring emerging technologies and trends in web development. From AI-powered tools to new frameworks, discover what's shaping the future of the web.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">Technology</span>
+              <span class="tech-tag">Trends</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">Read More →</a>
+          </article>
+
+          <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-gray-500 text-sm">March 5, 2024</span>
+              <span class="text-gray-500 text-sm">4 min read</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                Optimizing Performance in Modern Web Apps
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Tips and techniques for improving your application's performance. Learn about code splitting, lazy loading, and other optimization strategies.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-tag">Performance</span>
+              <span class="tech-tag">Optimization</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">Read More →</a>
+          </article>
+
+          <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-gray-500 text-sm">February 28, 2024</span>
+              <span class="text-gray-500 text-sm">6 min read</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                Getting Started with Tailwind CSS
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              A beginner's guide to Tailwind CSS. Learn how to set up your project, understand utility classes, and build responsive designs efficiently.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Design</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">Read More →</a>
+          </article>
+
+          <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-gray-500 text-sm">February 20, 2024</span>
+              <span class="text-gray-500 text-sm">5 min read</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                Understanding JavaScript Promises and Async/Await
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Deep dive into asynchronous JavaScript. Learn how to handle promises, use async/await, and write cleaner asynchronous code.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Async</span>
+              <span class="tech-tag">Promises</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">Read More →</a>
+          </article>
+
+          <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="text-gray-500 text-sm">February 15, 2024</span>
+              <span class="text-gray-500 text-sm">4 min read</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              <a href="#" class="hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+                The Importance of Web Accessibility
+              </a>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Why accessibility matters and how to implement it in your web projects. Learn about WCAG guidelines and best practices.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-tag">Accessibility</span>
+              <span class="tech-tag">WCAG</span>
+              <span class="tech-tag">Best Practices</span>
+            </div>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">Read More →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-display font-bold text-center mb-12">Browse by Category</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+            <div class="text-3xl mb-4">💻</div>
+            <h3 class="text-lg font-semibold mb-2">Web Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Tutorials and guides for modern web development
+            </p>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">View Posts →</a>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+            <div class="text-3xl mb-4">🎨</div>
+            <h3 class="text-lg font-semibold mb-2">Design & UX</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Insights on design principles and user experience
+            </p>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">View Posts →</a>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+            <div class="text-3xl mb-4">🚀</div>
+            <h3 class="text-lg font-semibold mb-2">Tips & Tricks</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Useful tips and tricks for developers
+            </p>
+            <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">View Posts →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-display font-bold mb-6">Stay Updated</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+          Subscribe to my newsletter for the latest posts and insights
+        </p>
+        <form class="max-w-md mx-auto flex gap-4">
+          <input type="email" placeholder="Enter your email" class="flex-1 form-input" required>
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 dark:bg-gray-900 py-8 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-600 dark:text-gray-300">
+        © 2024 Dionisio DR Alvior III. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="/js/theme.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html> 
