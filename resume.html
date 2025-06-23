@@ -7,9 +7,9 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Tailwind Configuration -->
-  <script src="/js/tailwind-config.js"></script>
+  <script src="js/tailwind-config.js"></script>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/extra.css">
+  <link rel="stylesheet" href="css/extra.css">
 </head>
 <body class="bg-retro-light text-retro-brown dark:bg-retro-dark dark:text-white font-sans transition-colors duration-300">
   <!-- STICKY NAVIGATION -->
@@ -18,7 +18,7 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Name -->
         <div class="flex-shrink-0">
-          <a href="/" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+          <a href="index.html" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
             Dionisio DR Alvior III
           </a>
         </div>
@@ -26,14 +26,14 @@
         <!-- Desktop Navigation -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/about.html" class="nav-link">About</a>
-            <a href="/services.html" class="nav-link">Services</a>
-            <a href="/projects.html" class="nav-link">Projects</a>
-            <a href="/portfolio.html" class="nav-link">Portfolio</a>
-            <a href="/blog.html" class="nav-link">Blog</a>
-            <a href="/resume.html" class="nav-link text-retro-neon dark:text-retro-amber">Resume</a>
-            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="resume.html" class="nav-link text-retro-neon dark:text-retro-amber">Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </div>
         </div>
         
@@ -55,14 +55,14 @@
       <!-- Mobile Navigation -->
       <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-800">
-          <a href="/" class="mobile-nav-link">Home</a>
-          <a href="/about.html" class="mobile-nav-link">About</a>
-          <a href="/services.html" class="mobile-nav-link">Services</a>
-          <a href="/projects.html" class="mobile-nav-link">Projects</a>
-          <a href="/portfolio.html" class="mobile-nav-link">Portfolio</a>
-          <a href="/blog.html" class="mobile-nav-link">Blog</a>
-          <a href="/resume.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">Resume</a>
-          <a href="/contact.html" class="mobile-nav-link">Contact</a>
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="services.html" class="mobile-nav-link">Services</a>
+          <a href="projects.html" class="mobile-nav-link">Projects</a>
+          <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+          <a href="blog.html" class="mobile-nav-link">Blog</a>
+          <a href="resume.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">Resume</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
           <!-- Header -->
           <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div class="flex justify-center md:justify-start">
-              <img src="/assets/images/me-selfie.jpg" alt="Dionisio DR Alvior III" class="w-24 h-24 rounded-full object-cover border-4 border-retro-neon dark:border-retro-amber">
+              <img src="assets/images/me-selfie.jpg" alt="Dionisio DR Alvior III" class="w-24 h-24 rounded-full object-cover border-4 border-retro-neon dark:border-retro-amber">
             </div>
             <div class="md:col-span-2 text-center md:text-left">
               <h3 class="text-2xl font-display font-bold mb-2">Dionisio DR Alvior III</h3>
@@ -271,8 +271,11 @@
           
           <!-- Download Button -->
           <div class="text-center mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <a href="/assets/resume.pdf" download class="btn-primary">
-              📄 Download Full Resume (PDF)
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              📄 Resume content displayed above. Contact me for a downloadable version.
+            </p>
+            <a href="contact.html" class="btn-primary">
+              📧 Contact Me
             </a>
           </div>
         </div>
@@ -379,8 +382,8 @@
           Let's discuss how my skills and experience can benefit your project
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact.html" class="btn-primary">Get In Touch</a>
-          <a href="/projects.html" class="btn-secondary">View My Work</a>
+          <a href="contact.html" class="btn-primary">Get In Touch</a>
+          <a href="projects.html" class="btn-secondary">View My Work</a>
         </div>
       </div>
     </section>
@@ -395,8 +398,8 @@
   </footer>
 
   <!-- JavaScript Files -->
-  <script src="/js/theme.js"></script>
-  <script src="/js/navigation.js"></script>
-  <script src="/js/animations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html> 
