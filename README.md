@@ -157,3 +157,4 @@ The website features consistent navigation across all pages:
 - The profile image is now correctly referenced as `me-selfie.jpg`
 - Each page is self-contained but shares common navigation and styling
 - The multi-page structure improves SEO and user experience 
+- i was so handsome
