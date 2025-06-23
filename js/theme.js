@@ -4,14 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const themeIcon = document.getElementById('theme-icon');
   const html = document.documentElement;
 
-  // Load theme from localStorage
+  // Load theme from localStorage, default to dark mode
   const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    html.classList.add('dark');
-    themeIcon.textContent = '☀️';
-  } else if (savedTheme === 'light') {
+  if (savedTheme === 'light') {
     html.classList.remove('dark');
     themeIcon.textContent = '🌙';
+  } else {
+    // Default to dark mode (when savedTheme is 'dark' or null)
+    html.classList.add('dark');
+    themeIcon.textContent = '☀️';
   }
 
   // Theme toggle functionality
