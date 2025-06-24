@@ -191,7 +191,7 @@
           <!-- Contact Form -->
           <div>
             <h2 class="text-3xl font-display font-bold mb-8">Send me a message</h2>
-            <form class="space-y-6" id="contact-form">
+            <form class="space-y-6" id="contact-form" action="https://formsubmit.co/junalvior21@gmail.com" method="POST">
               <div class="grid md:grid-cols-2 gap-6">
                 <div class="group">
                   <label for="name" class="block text-sm font-bold mb-3 text-gray-700 dark:text-gray-300">First Name *</label>
@@ -224,10 +224,9 @@
                 <label for="budget" class="block text-sm font-bold mb-3 text-gray-700 dark:text-gray-300">Budget Range</label>
                 <select id="budget" name="budget" class="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 rounded-xl focus:border-retro-neon dark:focus:border-retro-amber focus:outline-none transition-all duration-300 bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
                   <option value="">Select budget range</option>
-                  <option value="under-1000">Under $1,000</option>
+                  <option value="500">Under $500</option>
+                  <option value="5000-10000">$500 - $1,000</option>
                   <option value="1000-5000">$1,000 - $5,000</option>
-                  <option value="5000-10000">$5,000 - $10,000</option>
-                  <option value="over-10000">Over $10,000</option>
                   <option value="discuss">Let's discuss</option>
                 </select>
               </div>
@@ -348,76 +347,27 @@
     function toggleFAQ(button) {
       const content = button.nextElementSibling;
       const icon = button.querySelector('svg');
-      
-      // Toggle content visibility
       content.classList.toggle('hidden');
-      
-      // Rotate icon
       if (content.classList.contains('hidden')) {
         icon.style.transform = 'rotate(0deg)';
       } else {
         icon.style.transform = 'rotate(180deg)';
       }
     }
-    
-    // Enhanced Form Handling
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const submitBtn = e.target.querySelector('button[type="submit"]');
-      const submitText = document.getElementById('submit-text');
-      const loadingText = document.getElementById('loading-text');
-      const submitIcon = document.getElementById('submit-icon');
-      
-      // Show loading state
-      submitText.classList.add('hidden');
-      loadingText.classList.remove('hidden');
-      submitBtn.disabled = true;
-      submitBtn.classList.add('opacity-75');
-      
-      // Simulate form submission (replace with actual form handling)
-      setTimeout(() => {
-        // Show success message
-        submitBtn.innerHTML = `
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          Message Sent!
-        `;
-        submitBtn.classList.remove('bg-gradient-to-r', 'from-retro-neon', 'to-retro-amber');
-        submitBtn.classList.add('bg-green-500');
-        
-        // Reset form
-        e.target.reset();
-        
-        // Reset button after 3 seconds
-        setTimeout(() => {
-          submitBtn.innerHTML = `
-            <span id="submit-text">Send Message</span>
-            <span id="loading-text" class="hidden">Sending...</span>
-            <svg id="submit-icon" class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-            </svg>
-          `;
-          submitBtn.classList.remove('bg-green-500', 'opacity-75');
-          submitBtn.classList.add('bg-gradient-to-r', 'from-retro-neon', 'to-retro-amber');
-          submitBtn.disabled = false;
-          submitText.classList.remove('hidden');
-        }, 3000);
-      }, 2000);
-    });
-    
     // Form field animations
     const formFields = document.querySelectorAll('input, textarea, select');
     formFields.forEach(field => {
       field.addEventListener('focus', function() {
         this.parentElement.classList.add('scale-105');
       });
-      
       field.addEventListener('blur', function() {
         this.parentElement.classList.remove('scale-105');
       });
     });
   </script>
+  <div id="thank-you-message" class="hidden text-center py-8">
+    <h2 class="text-2xl font-bold text-retro-neon dark:text-retro-amber mb-4">Thank you for your message!</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-300">I'll get back to you as soon as possible.</p>
+  </div>
 </body>
 </html> 
