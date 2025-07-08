@@ -165,16 +165,48 @@
           <!-- Portfolio Item 4 -->
           <div class="portfolio-item" data-category="web">
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <img src="assets/web-screenshots/simple-data-analytics.PNG" alt="Business Website" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+              <!-- POS System Image Carousel -->
+              <div class="relative h-48 overflow-hidden">
+                <div class="pos-carousel flex transition-transform duration-500 ease-in-out" id="pos-carousel">
+                  <img src="assets/pos-screenshots/Dashboard-desktop.PNG" alt="POS Dashboard Desktop" class="w-full h-48 object-cover flex-shrink-0">
+                  <img src="assets/pos-screenshots/dashboard-cp.PNG" alt="POS Dashboard Mobile" class="w-full h-48 object-cover flex-shrink-0">
+                  <img src="assets/pos-screenshots/reports-desktop.PNG" alt="POS Reports Desktop" class="w-full h-48 object-cover flex-shrink-0">
+                  <img src="assets/pos-screenshots/nav-cp.PNG" alt="POS Navigation Mobile" class="w-full h-48 object-cover flex-shrink-0">
+                  <img src="assets/pos-screenshots/login-page.PNG" alt="POS Login Page" class="w-full h-48 object-cover flex-shrink-0">
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors" onclick="prevPosSlide()">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                  </svg>
+                </button>
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors" onclick="nextPosSlide()">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                  <button class="w-2 h-2 bg-white/70 rounded-full pos-indicator active" onclick="goToPosSlide(0)"></button>
+                  <button class="w-2 h-2 bg-white/70 rounded-full pos-indicator" onclick="goToPosSlide(1)"></button>
+                  <button class="w-2 h-2 bg-white/70 rounded-full pos-indicator" onclick="goToPosSlide(2)"></button>
+                  <button class="w-2 h-2 bg-white/70 rounded-full pos-indicator" onclick="goToPosSlide(3)"></button>
+                  <button class="w-2 h-2 bg-white/70 rounded-full pos-indicator" onclick="goToPosSlide(4)"></button>
+                </div>
+              </div>
+              
               <div class="p-6">
-                <h3 class="text-lg font-semibold mb-2">Business Website</h3>
+                <h3 class="text-lg font-semibold mb-2">POS & Inventory Management System</h3>
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                  A professional business website with modern design and SEO optimization.
+                  A comprehensive Point of Sale and inventory management system with responsive design for both desktop and mobile devices. Features include real-time inventory tracking, sales reporting, user authentication, and intuitive navigation.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
                   <span class="tech-tag">HTML</span>
                   <span class="tech-tag">CSS</span>
                   <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Responsive Design</span>
                 </div>
                 <div class="flex space-x-2">
                   <a href="#" class="text-retro-neon dark:text-retro-amber hover:underline text-sm">View Live</a>
@@ -310,6 +342,79 @@
         });
       });
     });
+
+    // POS Carousel functionality
+    let currentPosSlide = 0;
+    const posCarousel = document.getElementById('pos-carousel');
+    const posIndicators = document.querySelectorAll('.pos-indicator');
+    const totalPosSlides = 5;
+
+    function updatePosCarousel() {
+      if (posCarousel) {
+        posCarousel.style.transform = `translateX(-${currentPosSlide * 100}%)`;
+      }
+      
+      // Update indicators
+      posIndicators.forEach((indicator, index) => {
+        if (index === currentPosSlide) {
+          indicator.classList.add('active');
+          indicator.classList.remove('bg-white/70');
+          indicator.classList.add('bg-white');
+        } else {
+          indicator.classList.remove('active');
+          indicator.classList.remove('bg-white');
+          indicator.classList.add('bg-white/70');
+        }
+      });
+    }
+
+    function nextPosSlide() {
+      currentPosSlide = (currentPosSlide + 1) % totalPosSlides;
+      updatePosCarousel();
+    }
+
+    function prevPosSlide() {
+      currentPosSlide = (currentPosSlide - 1 + totalPosSlides) % totalPosSlides;
+      updatePosCarousel();
+    }
+
+    function goToPosSlide(slideIndex) {
+      currentPosSlide = slideIndex;
+      updatePosCarousel();
+    }
+
+    // Auto-advance carousel every 5 seconds
+    setInterval(nextPosSlide, 5000);
+
+    // Touch/swipe support for mobile devices
+    let startX = 0;
+    let endX = 0;
+
+    if (posCarousel) {
+      posCarousel.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+      });
+
+      posCarousel.addEventListener('touchend', function(e) {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            // Swipe left - next slide
+            nextPosSlide();
+          } else {
+            // Swipe right - previous slide
+            prevPosSlide();
+          }
+        }
+      }
+    }
   </script>
 </body>
 </html> 

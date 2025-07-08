@@ -1,0 +1,1 @@
+todo: add a swiper in the image to see the ui of the specific system (hard-coded)
