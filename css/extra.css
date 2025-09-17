@@ -34,6 +34,10 @@
   @apply bg-retro-neon dark:bg-retro-amber text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105 shadow-lg;
 }
 
+.btn-primary:hover {
+  @apply bg-blue-800 dark:bg-blue-600; /* Darker blue for hover */
+}
+
 .btn-secondary {
   @apply border-2 border-retro-neon dark:border-retro-amber text-retro-neon dark:text-retro-amber px-6 py-3 rounded-lg font-medium hover:bg-retro-neon hover:text-white dark:hover:bg-retro-amber dark:hover:text-white transition-all duration-200 transform hover:scale-105;
 }
