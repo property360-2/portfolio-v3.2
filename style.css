@@ -77,15 +77,45 @@ body {
   animation: move-3 15s infinite alternate;
 }
 
-@keyframes move-1 { 0% { transform: translate(0, 0); } 100% { transform: translate(20vw, 30vh); } }
-@keyframes move-2 { 0% { transform: translate(0, 0); } 100% { transform: translate(-25vw, -20vh); } }
-@keyframes move-3 { 0% { transform: translate(0, 0); } 100% { transform: translate(30vw, -30vh); } }
+@keyframes move-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(20vw, 30vh);
+  }
+}
+
+@keyframes move-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-25vw, -20vh);
+  }
+}
+
+@keyframes move-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(30vw, -30vh);
+  }
+}
 
 /* Main Container */
 .container {
   width: 100%;
-  max-width: 600px;
-  padding: 20px;
+  max-width: 500px;
+  padding: 15px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Glass Card */
@@ -95,52 +125,68 @@ body {
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  padding: 60px 40px;
+  padding: 35px 30px;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.1s ease-out;
   animation: fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
 }
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Header */
 header {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .status-badge {
   display: inline-block;
   background: rgba(99, 102, 241, 0.2);
   color: var(--primary-color);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 6px 16px;
+  padding: 4px 14px;
   border-radius: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 h1 {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-style: italic;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .message {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 48px;
-  padding: 0 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.countdown-timer {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 10px;
+  font-size: 1.1rem;
 }
 
 /* CTA Section */
@@ -148,26 +194,26 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 15px;
 }
 
 .main-button {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  padding: 18px 40px;
+  padding: 14px 32px;
   border-radius: var(--radius-sm);
   transition: all 0.3s ease;
-  box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 16px -4px rgba(99, 102, 241, 0.4);
 }
 
 .main-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -4px rgba(99, 102, 241, 0.6);
   background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
 }
 
@@ -177,11 +223,11 @@ h1 {
 }
 
 .main-button:hover .arrow {
-  transform: translateX(6px);
+  transform: translateX(4px);
 }
 
 .direct-link {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
 }
 
@@ -199,20 +245,55 @@ h1 {
 
 /* Footer */
 footer {
-  margin-top: 60px;
+  margin-top: 35px;
   border-top: 1px solid var(--glass-border);
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 footer p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   letter-spacing: 1px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
-  h1 { font-size: 2.5rem; }
-  .glass-card { padding: 40px 20px; }
-  .message { font-size: 1rem; }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .glass-card {
+    padding: 30px 15px;
+  }
+
+  .message {
+    font-size: 0.95rem;
+  }
+
+  .main-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-height: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .glass-card {
+    padding: 20px 15px;
+  }
+
+  header {
+    margin-bottom: 15px;
+  }
+
+  .message {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
 }
