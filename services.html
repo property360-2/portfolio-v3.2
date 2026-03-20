@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Dionisio DR Alvior III</title>
+  <meta http-equiv="refresh" content="4;url=https://property360-2.github.io/quick-portfolio/index.html">
+  <link rel="canonical" href="https://property360-2.github.io/quick-portfolio/index.html">
+  <link rel="me" href="https://property360-2.github.io/quick-portfolio/index.html">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Configuration -->
+  <script src="js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/extra.css">
+</head>
+<body class="bg-retro-light text-retro-brown dark:bg-retro-dark dark:text-white font-sans transition-colors duration-300">
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/90 dark:bg-retro-dark/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo/Name -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-xl font-display font-semibold text-retro-brown dark:text-white hover:text-retro-neon dark:hover:text-retro-amber transition-colors">
+            Dionisio DR Alvior III
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link text-retro-neon dark:text-retro-amber">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+        
+        <!-- Theme Toggle & Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <span id="theme-icon" class="text-lg">🌙</span>
+          </button>
+          
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-800">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="services.html" class="mobile-nav-link text-retro-neon dark:text-retro-amber">Services</a>
+          <a href="projects.html" class="mobile-nav-link">Projects</a>
+          <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+          <a href="blog.html" class="mobile-nav-link">Blog</a>
+          <a href="resume.html" class="mobile-nav-link">Resume</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <section class="py-6 sm:py-8">
+      <div class="mx-auto max-w-4xl">
+        <div class="migration-card rounded-3xl px-6 py-8 text-center sm:px-10">
+          <p class="migration-kicker mb-3 text-xs font-semibold uppercase text-blue-700 dark:text-blue-300">Portfolio Migration</p>
+          <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">I've moved to a new home!</h2>
+          <p class="migration-copy mx-auto mt-4 text-base leading-7 text-slate-600 dark:text-slate-300 sm:text-lg">
+            My portfolio has been upgraded with my latest 2026 projects. You are being redirected, or you can click the button below.
+          </p>
+          <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a href="https://property360-2.github.io/quick-portfolio/index.html" rel="me" class="migration-button inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition-all duration-200">
+              Visit New Portfolio
+            </a>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Automatic redirect in 4 seconds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PAGE HEADER -->
+    <div class="text-center py-20">
+      <h1 class="text-4xl md:text-6xl font-display font-bold mb-8 bg-gradient-to-r from-retro-neon to-retro-amber bg-clip-text text-transparent">
+        My Services
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        Comprehensive web development solutions tailored to your needs. From concept to deployment, I deliver modern, scalable applications that drive results.
+      </p>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div class="service-icon mb-6 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-2xl">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Full Stack Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              Building complete web applications from frontend to backend using modern technologies and best practices.
+            </p>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Frontend Development (React, Next.js)</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Backend Development (Node.js, PHP)</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Database Design & Management</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>API Development & Integration</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div class="service-icon mb-6 w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center text-2xl">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">UI/UX Design</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              Creating responsive, accessible, and semantic designs that provide exceptional user experiences.
+            </p>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Responsive Web Design</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>User Interface Design</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>User Experience Optimization</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Accessibility Implementation</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div class="service-icon mb-6 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center text-2xl">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Project Management</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              Managing projects from conception to deployment with focus on quality, timeline, and client satisfaction.
+            </p>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Project Planning & Strategy</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Development Lifecycle Management</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Quality Assurance & Testing</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="w-2 h-2 bg-retro-neon dark:bg-retro-amber rounded-full"></span>
+                <span>Deployment & Maintenance</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+    <section class="py-24 bg-gray-50 dark:bg-gray-900 p-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-display font-bold text-center mb-16">Additional Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <div class="service-icon mb-6 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-xl">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">SEO Optimization</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              Improve your website's search engine rankings and visibility with proven SEO strategies.
+            </p>
+          </div>
+          
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <div class="service-icon mb-6 w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center text-xl">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Performance Optimization</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              Speed up your website and improve user experience with performance optimization techniques.
+            </p>
+          </div>
+          
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <div class="service-icon mb-6 w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl flex items-center justify-center text-xl">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Security Auditing</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              Identify and fix security vulnerabilities to protect your applications and user data.
+            </p>
+          </div>
+          
+          <div class="service-card bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <div class="service-icon mb-6 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-xl">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Analytics & Reporting</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+              Set up tracking and provide insights to help you make data-driven business decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="py-24">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-display font-bold text-center mb-16">Technologies I Work With</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <h3 class="text-2xl font-bold mb-6 text-retro-neon dark:text-retro-amber flex items-center">
+              <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Frontend
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">HTML5 & CSS3</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">JavaScript (ES6+)</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">React.js</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Next.js</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Tailwind CSS</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <h3 class="text-2xl font-bold mb-6 text-retro-neon dark:text-retro-amber flex items-center">
+              <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+              </svg>
+              Backend
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Node.js</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">PHP</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Express.js</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">MySQL</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">MongoDB</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+            <h3 class="text-2xl font-bold mb-6 text-retro-neon dark:text-retro-amber flex items-center">
+              <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Tools & Others
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Git & GitHub</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">VS Code</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Figma</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">Photoshop</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+              <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                <span class="font-medium">SEO Tools</span>
+                <span class="text-retro-neon dark:text-retro-amber">●</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="py-24 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-display font-bold text-center mb-16">My Development Process</h2>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center group">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-retro-neon to-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6 shadow-lg">
+                1
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-retro-neon to-transparent transform translate-x-4"></div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Discovery</h3>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Understanding your requirements, goals, and target audience to create the perfect solution.</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-retro-neon to-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6 shadow-lg">
+                2
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-retro-neon to-transparent transform translate-x-4"></div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Planning</h3>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Creating detailed project plans, wireframes, and technical specifications for development.</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="relative">
+              <div class="w-20 h-20 bg-gradient-to-br from-retro-neon to-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6 shadow-lg">
+                3
+              </div>
+              <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-retro-neon to-transparent transform translate-x-4"></div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Development</h3>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Building your project with clean, efficient code and modern development practices.</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-retro-neon to-retro-amber rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6 shadow-lg">
+                4
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Launch</h3>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Deploying your project and providing ongoing maintenance and support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-display font-bold mb-8">Ready to Start Your Project?</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
+          Let's discuss how I can help bring your ideas to life and create something amazing together.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="contact.html" class="btn-primary text-lg px-8 py-4">Get In Touch</a>
+          <a href="projects.html" class="btn-secondary text-lg px-8 py-4">View My Work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 dark:bg-gray-900 py-8 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-600 dark:text-gray-300">
+        © 2024 Dionisio DR Alvior III. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
